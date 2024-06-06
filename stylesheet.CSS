@@ -1,0 +1,333 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: hwb(33 80% 2%);
+  text-align: left;
+  overflow-x: hidden;
+}
+header {
+  background-color: hwb(33 80% 2%);
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.button a {
+  display: block;
+  padding: 10px 20px;
+  background-color: hwb(32 11% 24% / 0.445);
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.button:hover a {
+  background-color: hwb(33 11% 46% / 0.781);
+}
+img {
+  display: flex;
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  text-align: right;
+}
+.tiles {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+}
+table {
+  display: flex;
+  padding: 20px;
+  border-spacing: 12px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+}
+
+#coler th {
+  border-radius: 70px;
+  border: 15px;
+  background-color: rgb(219, 134, 22);
+}
+.About {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+  margin: 50px;
+}
+.container {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2%;
+  gap: 50px;
+  margin-left: 30px;
+}
+
+.section {
+  background-color: hwb(34 60% 10%);
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+.section:hover {
+  background-color: hwb(33 25% 45% / 0.781);
+}
+.section2 {
+  background-color: hwb(34 60% 10%);
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 20px;
+  margin: 30px;
+  margin-right: 350px;
+}
+.section2:hover {
+  background-color: hwb(33 25% 45% / 0.781);
+}
+#stop {
+  background-color: hwb(33 80% 2%);
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#tit {
+  margin: 20px;
+  padding-top: 35px;
+}
+.img3 {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  width: 1000px;
+  height: 300px;
+}
+
+.imagefour {
+  display: flex;
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+table {
+  color: #000000;
+  text-align: center;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 auto;
+}
+
+.nav-container {
+  justify-content: space-between;
+  margin: 0 auto 40px;
+  width: 80%;
+  nav ul {
+    padding: 0;
+  }
+}
+
+.basket-but {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  padding: 4px;
+  position: relative;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.271);
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  position: fixed;
+  display: none;
+}
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body:has(.modal.show) {
+  overflow: hidden;
+}
+.modal form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.modal form .form-but {
+  align-self: flex-end;
+  padding: 10px;
+  border: 0;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal .close-but {
+  position: absolute;
+  background-color: transparent;
+  top: 20px;
+  right: 20px;
+  border: 0;
+  cursor: pointer;
+}
+.modal .close-but svg {
+  width: 20px;
+  height: 20px;
+}
+.modal form div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.modal form div input {
+  text-align: right;
+  padding: 10px 4px;
+  outline: none;
+}
+.modal form div input.invalid {
+  border: 1px solid red;
+}
+.but-continue {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  /* align-self: flex-start; */
+  margin-right: 20px;
+}
+.but-continue:disabled {
+  background-color: rgb(56, 56, 56, 0.5);
+  cursor: not-allowed;
+}
+.properties {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 225, 225);
+  padding: 20px;
+  flex: 1 0 100%;
+  width: 100%;
+}
+.properties .row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.properties .details-row {
+  height: 0;
+  transition: 0.3s ease height;
+  overflow: hidden;
+}
+.properties .details-row.show {
+  height: auto;
+  border-bottom: 1px solid black;
+}
+
+.properties .details-row .details-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  justify-content: space-between;
+  text-align: right;
+  gap: 20px;
+  max-width: 80%;
+  margin: 0 auto 20px;
+}
+.properties .details-row .details-wrapper img {
+  object-fit: cover;
+  width: 100%;
+}
+.properties .row.header {
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: 1px solid black;
+  font-size: 18px;
+}
+.properties .body {
+  border: 1px solid black;
+}
+.properties .body .row:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.properties .row .col {
+  width: 25%;
+  text-align: right;
+  &:last-child {
+    text-align: left;
+  }
+  &:nth-child(2) {
+    width: 50%;
+  }
+}
+
+.col-but {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+.col-but.but-select {
+  padding: 10px;
+}
+.col-but.but-select.selected {
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
